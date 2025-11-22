@@ -198,6 +198,7 @@ class FlipperVideoConverterAlt:
             while True:
                 f.seek(pos)
                 sig = f.read(4)
+                if sig == b'data':
                     pos += 8
                     break
                 pos += 1
