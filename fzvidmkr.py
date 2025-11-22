@@ -321,7 +321,7 @@ class FlipperVideoConverterAlt:
 
     def convert(self):
         try:
-            self.console.print(Panel("Flipper Zero Video Converter (Makefile Project Version)", expand=False, border_style="green"))
+            self.console.print(Panel("fzvidmkr 1.0", expand=False, border_style="green"))
             self.console.print(f"[bold]Input:[/bold] {self.input_video}")
             self.console.print(f"[bold]Output:[/bold] {self.output_file}\n")
             
@@ -353,7 +353,7 @@ class FlipperVideoConverterAlt:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Convert MP4 files to Flipper Zero BND format (Makefile Project version)",
+        description="Convert MP4 files to Flipper Zero BND format",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
